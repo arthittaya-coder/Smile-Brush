@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smile Brush</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Smile Brush</h1>
+<p>เริ่มต้นรอยยิ้มที่สดใสในทุกวัน</p>
+</header>
+
+<h2>สินค้าของเรา</h2>
+
+<div class="products">
+  <div class="product">
+    <img src="images/pink.jpg">
+    <h3>Smile Soft Pink</h3>
+    <p>SKU: TB001</p>
+    <p>59 บาท</p>
+  </div>
+
+  <div class="product">
+    <img src="images/blue.jpg">
+    <h3>Smile Soft Blue</h3>
+    <p>SKU: TB002</p>
+    <p>59 บาท</p>
+  </div>
+</div>
+
+<form id="orderForm">
+<h2>สั่งซื้อสินค้า</h2>
+
+<label>เลือกสินค้า</label>
+<select id="sku">
+<option value="TB001">Smile Soft Pink</option>
+<option value="TB002">Smile Soft Blue</option>
+</select>
+
+<label>จำนวน</label>
+<input id="quantity" type="number" min="1" value="1" required>
+
+<label>ชื่อ-นามสกุล</label>
+<input id="name" required>
+
+<label>เบอร์โทรศัพท์</label>
+<input id="phone" type="tel" required>
+
+<label>ที่อยู่จัดส่งและรหัสไปรษณีย์</label>
+<textarea id="address" required></textarea>
+
+<h3>ยอดรวม: <span id="total">59</span> บาท</h3>
+
+<button type="submit">ยืนยันคำสั่งซื้อ</button>
+<p id="message"></p>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
+
