@@ -1,4 +1,4 @@
-const URL = "ใส่ลิงก์ Apps Script ตรงนี้";
+const URL = "https://script.google.com/macros/s/AKfycbwfZnbZqV2xkJZm2LEkXeLiAjXvxY4Ri4gdJD2o8koX8vlG80e-ICltYmVg4GV_IefE/exec";
 
 const get = id => document.getElementById(id);
 
