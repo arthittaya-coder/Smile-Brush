@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smile Brush Admin</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4faf9;
+  margin: 0;
+  color: #264653;
+}
+header {
+  background: #bce8df;
+  padding: 30px;
+  text-align: center;
+}
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #00000010;
+}
+a {
+  display: block;
+  background: #268c7c;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Smile Brush Admin</h1>
+<p>ระบบบริหารจัดการคำสั่งซื้อและคลังสินค้า</p>
+</header>
+
+<main>
+<h2>Management Dashboard</h2>
+<div class="menu">
+<div class="card">
+<h2>Orders</h2>
+<p>ตรวจสอบคำสั่งซื้อของลูกค้า</p>
+<a href="#" onclick="return openSheet(0)">จัดการออเดอร์</a>
+</div>
+
+<div class="card">
+<h2>Picking List</h2>
+<p>ตรวจสอบ SKU และจำนวนที่ต้องหยิบ</p>
+<a href="#" onclick="return openSheet(1)">ใบหยิบสินค้า</a>
+</div>
+
+<div class="card">
+<h2>Packing List</h2>
+<p>ตรวจสอบและแพ็กสินค้า</p>
+<a href="#" onclick="return openSheet(2)">ใบแพ็กสินค้า</a>
+</div>
+
+<div class="card">
+<h2>Shipping Label</h2>
+<p>จัดทำและพิมพ์ใบจ่าหน้าพัสดุ</p>
+<a href="#" onclick="return openSheet(3)">ใบจ่าหน้าพัสดุ</a>
+</div>
+</div>
+<br>
+<a href="index.html">กลับหน้าร้านค้า</a>
+</main>
+
+<script>
+const sheets = [
+  "ใส่ลิงก์ชีต Orders",
+  "ใส่ลิงก์ชีต Picking List",
+  "ใส่ลิงก์ชีต Packing List",
+  "ใส่ลิงก์ชีต Shipping Label"
+];
+
+function openSheet(i) {
+  window.open(sheets[i], "_blank", "noopener,noreferrer");
+  return false;
+}
+</script>
+</body>
+</html>
